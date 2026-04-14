@@ -77,7 +77,7 @@ Each session = one plan-mode cycle. Read `CLAUDE.md` + `DESIGN.md` + relevant sp
 | 0 — Scaffold | `globals.css` tokens, `lib/data.ts` types + data, `layout.tsx` fonts/meta, `page.tsx` shell, `tailwind.config.ts`, `next.config.js` | `app/*`, `lib/data.ts` | Done |
 | 1 — Nav | `Nav.tsx` — sticky, scroll transparency, mobile hamburger, resume download | `components/Nav.tsx` | Done |
 | 2 — Hero | `Hero.tsx` — full viewport, staggered entrance, status badge, social links, scroll indicator | `components/Hero.tsx` | Done |
-| 3 — About | `About.tsx` — two-column layout, bio paragraphs, stats card | `components/About.tsx` | Not started |
+| 3 — About | `About.tsx` — two-column layout, bio paragraphs, stats card | `components/About.tsx` | Done |
 | 4 — Experience | `Experience.tsx` — vertical timeline, 4 entries, current badge | `components/Experience.tsx` | Not started |
 | 5 — Projects | `Projects.tsx` — featured card full-width, 2-col grid, 8 projects, tech tags | `components/Projects.tsx` | Not started |
 | 6 — Skills | `Skills.tsx` — category rows, pill tags, muted "Familiar" row | `components/Skills.tsx` | Not started |
