@@ -68,6 +68,7 @@ export interface BlogPost {
   tags: string[];
   description: string;
   link: string;
+  readTime?: string;
 }
 
 export interface Certification {
@@ -154,6 +155,15 @@ export const footerLinks: NavLink[] = [
   { label: "Contact", href: "#contact" },
 ];
 
+export const contactSection = {
+  eyebrow: "GET IN TOUCH",
+  heading: "Let's Build Something Together",
+  subtext:
+    "I'm open to full-time AI/ML engineering roles. Always happy to talk about RAG pipelines, agent architectures, research collaborations, or your hard problem.",
+};
+
+export const footerTagline = "Built with Next.js & ☕";
+
 // ─── Experience ───────────────────────────────────────────────────────────────
 
 export const experience: Experience[] = [
@@ -235,7 +245,7 @@ export const projects: Project[] = [
   {
     title: "MindBridge — Mental Health AI Companion",
     date: "2025",
-    category: "GenAI · Hackathon",
+    category: "GenAI · Conversational AI",
     description:
       "A calm mental-health companion built for people navigating stressful job search phases. Features Sage AI (Claude-powered streaming chat with journal-aware personalization and crisis keyword detection), anonymous peer community rooms, wellbeing tools (box breathing, grounding exercises, rejection reframe), and private journaling with mood tagging. Built end-to-end in a hackathon sprint.",
     stack: ["Anthropic Claude", "FastAPI", "ChromaDB", "React", "SQLite"],
@@ -329,6 +339,7 @@ export const posts: BlogPost[] = [
     description:
       "Most AI systems fail quietly — not because the models are bad, but because the orchestration layer can't handle real-world complexity.",
     link: "https://medium.com/@manasdani999/why-langchain-isnt-enough-5-surprising-truths-about-building-real-world-ai-agents-with-langgraph-7b97460c0882",
+    readTime: "5 min read",
   },
   {
     title: "Beyond Answering Questions: How Agentic AI Is Redefining How We Work",
@@ -337,6 +348,7 @@ export const posts: BlogPost[] = [
     description:
       "How AI moves from assistant to autonomous partner — and what that shift means for how we build and work.",
     link: "https://medium.com/@manasdani999/beyond-answering-questions-how-agentic-ai-is-redefining-how-we-work-3d5c651a8fa4",
+    readTime: "4 min read",
   },
 ];
 

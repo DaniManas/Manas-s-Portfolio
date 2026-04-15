@@ -78,14 +78,14 @@ Each session = one plan-mode cycle. Read `CLAUDE.md` + `DESIGN.md` + relevant sp
 | 1 — Nav | `Nav.tsx` — sticky, scroll transparency, mobile hamburger, resume download | `components/Nav.tsx` | Done |
 | 2 — Hero | `Hero.tsx` — full viewport, staggered entrance, status badge, social links, scroll indicator | `components/Hero.tsx` | Done |
 | 3 — About | `About.tsx` — two-column layout, bio paragraphs, stats card | `components/About.tsx` | Done |
-| 4 — Experience | `Experience.tsx` — vertical timeline, 4 entries, current badge | `components/Experience.tsx` | Not started |
-| 5 — Projects | `Projects.tsx` — featured card full-width, 2-col grid, 8 projects, tech tags | `components/Projects.tsx` | Not started |
-| 6 — Skills | `Skills.tsx` — category rows, pill tags, muted "Familiar" row | `components/Skills.tsx` | Not started |
-| 7 — Writing | `Writing.tsx` — 2-col blog cards, Medium CTA | `components/Writing.tsx` | Not started |
-| 8 — Certifications | `Certifications.tsx` — cert cards, badge images, placeholder card | `components/Certifications.tsx` | Not started |
-| 9 — Testimonials | `Testimonials.tsx` — quote cards, left border accent | `components/Testimonials.tsx` | Not started |
-| 10 — Education | `Education.tsx` — 2 cards, GPA badges, in-progress tag | `components/Education.tsx` | Not started |
-| 11 — Contact + Footer | `Contact.tsx` — centered, 2x2 link grid. `Footer.tsx` — single row | `components/Contact.tsx`, `components/Footer.tsx` | Not started |
+| 4 — Experience | `Experience.tsx` — vertical timeline, 4 entries, current badge | `components/Experience.tsx` | Done |
+| 5 — Projects | `Projects.tsx` — featured card full-width, 2-col grid, 8 projects, tech tags | `components/Projects.tsx` | Done |
+| 6 — Skills | `Skills.tsx` — category rows, pill tags, muted "Familiar" row | `components/Skills.tsx` | Done |
+| 7 — Writing | `Writing.tsx` — 2-col blog cards, Medium CTA | `components/Writing.tsx` | Done |
+| 8 — Certifications | `Certifications.tsx` — cert cards, badge images, placeholder card | `components/Certifications.tsx` | Done |
+| 9 — Testimonials | `Testimonials.tsx` — quote cards, left border accent | `components/Testimonials.tsx` | Done |
+| 10 — Education | `Education.tsx` — 2 cards, GPA badges, in-progress tag | `components/Education.tsx` | Done |
+| 11 — Contact + Footer | `Contact.tsx` — centered, 2x2 link grid. `Footer.tsx` — single row | `components/Contact.tsx`, `components/Footer.tsx` | Done |
 | 12 — Polish + Deploy | Animation audit, mobile QA (375/390/414), keyboard nav, Lighthouse, Vercel deploy | all files | Not started |
 
 Update `Not started → In progress → Done` as you go.
