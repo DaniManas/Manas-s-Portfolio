@@ -86,7 +86,7 @@ Each session = one plan-mode cycle. Read `CLAUDE.md` + `DESIGN.md` + relevant sp
 | 9 — Testimonials | `Testimonials.tsx` — quote cards, left border accent | `components/Testimonials.tsx` | Done |
 | 10 — Education | `Education.tsx` — 2 cards, GPA badges, in-progress tag | `components/Education.tsx` | Done |
 | 11 — Contact + Footer | `Contact.tsx` — centered, 2x2 link grid. `Footer.tsx` — single row | `components/Contact.tsx`, `components/Footer.tsx` | Done |
-| 12 — Polish + Deploy | Animation audit, mobile QA (375/390/414), keyboard nav, Lighthouse, Vercel deploy | all files | Not started |
+| 12 — Polish + Deploy | Animation audit, mobile QA (375/390/414), keyboard nav, Lighthouse, Vercel deploy | all files | In progress |
 
 Update `Not started → In progress → Done` as you go.
 

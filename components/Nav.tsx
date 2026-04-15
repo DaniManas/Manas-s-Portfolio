@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import { Menu, X, Download } from 'lucide-react';
 import { navLinks, meta } from '@/lib/data';
@@ -9,6 +9,8 @@ export function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const shouldReduceMotion = useReducedMotion();
+  const hamburgerRef = useRef<HTMLButtonElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,6 +36,17 @@ export function Nav() {
     return () => {
       document.body.style.overflow = '';
     };
+  }, [mobileOpen]);
+
+  // Move focus into menu when it opens; return focus to hamburger when it closes
+  useEffect(() => {
+    if (mobileOpen) {
+      // Small delay so AnimatePresence has rendered the close button
+      const timer = setTimeout(() => closeButtonRef.current?.focus(), 50);
+      return () => clearTimeout(timer);
+    } else {
+      hamburgerRef.current?.focus();
+    }
   }, [mobileOpen]);
 
   const handleNavClick = useCallback(
@@ -123,6 +136,7 @@ export function Nav() {
 
             {/* Hamburger — mobile only */}
             <button
+              ref={hamburgerRef}
               className="md:hidden p-2 text-[var(--color-ink)] hover:text-[var(--color-accent)] transition-colors duration-200"
               onClick={() => setMobileOpen(true)}
               aria-label="Open menu"
@@ -160,6 +174,7 @@ export function Nav() {
                 </span>
               </div>
               <button
+                ref={closeButtonRef}
                 className="p-2 text-[var(--color-ink)] hover:text-[var(--color-accent)] transition-colors duration-200"
                 onClick={() => setMobileOpen(false)}
                 aria-label="Close menu"
