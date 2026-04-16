@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { motion, useReducedMotion, type Variants } from 'framer-motion';
 import { siGithub } from 'simple-icons';
@@ -82,12 +83,15 @@ export function Hero() {
       >
         {/* Avatar */}
         <motion.div variants={shouldReduceMotion ? undefined : itemVariants}>
-          {/* Placeholder for headshot — swap with next/image when photo is ready */}
-          <div
-            className="w-[120px] h-[120px] rounded-full bg-[var(--color-accent)] flex items-center justify-center shadow-[0_4px_24px_var(--color-shadow)]"
-            aria-hidden="true"
-          >
-            <span className="font-serif text-[32px] text-white select-none">MD</span>
+          <div className="w-[120px] h-[120px] rounded-full overflow-hidden shadow-[0_4px_24px_var(--color-shadow)] ring-2 ring-[var(--color-accent)]">
+            <Image
+              src="/profile.png"
+              alt="Manas Dani"
+              width={120}
+              height={120}
+              className="object-cover w-full h-full"
+              priority
+            />
           </div>
         </motion.div>
 
